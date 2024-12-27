@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
@@ -14,4 +14,5 @@ const blacklistTokenSchema = new Schema({
     expires: 86400 // 24 hours in seconds
   }
 });
-module.exports = mongoose.model('BlacklistToken', blacklistTokenSchema);
+const BlacklistToken = mongoose.models.BlacklistToken || mongoose.model('BlacklistToken', blacklistTokenSchema);
+export default BlacklistToken;
