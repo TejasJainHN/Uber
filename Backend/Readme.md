@@ -1,11 +1,14 @@
 # User Registration API Documentation
 
 ## Register User
+
 Register a new user in the system.
 
 ### Endpoint
+
 ### Request Body
-```json
+
+````json
 {
   "fullname": {
     "firstname": "string", // minimum 3 characters
@@ -39,3 +42,4 @@ Register a new user in the system.
   "password": "password123"
 }
 }
+````
