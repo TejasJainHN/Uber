@@ -85,7 +85,7 @@ const Home = () => {
       transform:'translateY(0)'
     })
   }else {
-    gsap.to(confirmRidePanelRef.current,{
+    gsap.to(vehicleFoundref.current,{
       transform:'translateY(100%)'
     })
   }
